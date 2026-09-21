@@ -49,8 +49,8 @@ DSN Mart operates stores ranging from small corner shops to large hypermarkets a
 ```
 ├── train.csv               # training data (product-store records with total_sales)
 ├── test.csv                # test data (predictions required)
-├── pipeline.py              # baseline LightGBM pipeline
-├── pipeline_v2.py            # improved pipeline: target encoding + CatBoost/LightGBM blend
+
+├── pipeline.py            # improved pipeline: target encoding + CatBoost/LightGBM blend
 ├── submission.csv           # final predictions for Kaggle leaderboard
 └── README.md
 ```
@@ -59,7 +59,6 @@ DSN Mart operates stores ranging from small corner shops to large hypermarkets a
 
 ```bash
 pip install lightgbm catboost
-python pipeline_v2.py
 ```
 
 This produces `submission.csv` with columns `id, total_sales`, ready for upload to the competition leaderboard.
@@ -70,4 +69,4 @@ This produces `submission.csv` with columns `id, total_sales`, ready for upload 
 - Model stacking instead of simple weighted blending
 
 ## Author
-Abdulrahman — Kano, Nigeria
+Abdulrahman Musa Inuwa — Kano, Nigeria
